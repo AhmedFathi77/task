@@ -1,0 +1,24 @@
+.form{
+  background-color: #fefefe;
+  padding: 2rem;
+}
+.search{
+  margin-top: 1.5rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.button{
+  width: 168px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #41126c;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}

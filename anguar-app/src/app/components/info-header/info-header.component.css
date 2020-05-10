@@ -1,0 +1,60 @@
+.wrapper{
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+}
+.addWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.add-employer{
+  width: 168px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #41126c;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+}
+.title{
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.infoWrapper{
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 18px;
+  align-items: flex-start;
+}
+.one{
+  flex: 1;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #9b9b9b;
+}
+.two{
+  flex: 2;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #9b9b9b;
+}
