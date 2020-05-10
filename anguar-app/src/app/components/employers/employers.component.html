@@ -1,0 +1,13 @@
+  <app-filters
+    (filter)="filter($event)"
+  ></app-filters>
+  <app-info-header 
+    (addNewEmployee)="addNewEmployee($event)"
+    [count]="count"
+  ></app-info-header>
+  <app-employer
+    *ngFor="let employer of employers"
+    [employer]="employer"
+    (editEmployee)="editEmployee($event)"
+    (deleteEmployee)="deleteEmployee($event)"
+  ></app-employer>
