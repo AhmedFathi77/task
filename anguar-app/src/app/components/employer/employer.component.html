@@ -1,0 +1,61 @@
+<div class="employerWrapper">
+  <span class="name">{{employer.name}}</span>
+  <span class="age">{{employer.age}}</span>
+  <span class="salary">{{employer.salary}}</span>
+  <span class="department">{{dep_name}}</span>
+  <span class="controllers">
+    <div class="editWrapper" (click)="openModalDialog()">
+      <img src="../../../assets/edit.svg" />
+    </div>
+    <div class="deleteWrapper" (click)="handledeleteEmployee()">
+      <img src="../../../assets/trash.svg" />
+    </div>
+  </span>
+
+
+  <div class="modal mo"  [ngStyle]="{'display':display}"  tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel22">Edit employer info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form #editForm="ngForm" (ngSubmit)="handleSubmit()" class="form">
+              <div class="col">
+                <label for="formGroupExampleInput">Employer name</label>
+                <input type="text" class="form-control" id="name" name="name"  placeholder="name"  [(ngModel)]="employerEditForm.name">
+              </div>
+              <br>
+              <div class="col">
+                <label for="formGroupExampleInput">Employer salary</label>
+                <input type="text" class="form-control" id="salary" name="salary"  placeholder="salary" [(ngModel)]="employerEditForm.salary">
+              </div>
+              <br>
+              <div class="col">
+                <label for="formGroupExampleInput">Employer age</label>
+                <input type="text" class="form-control" id="age" name="age" placeholder="age" [(ngModel)]="employerEditForm.age" >
+              </div>
+              <br>
+              <div class="col">
+                <label for="formGroupExampleInput">Department name</label>
+                <select class="form-control" id="dep_id" name="dep_id" [(ngModel)]="employerEditForm.dep">
+                  <option *ngFor="let cat of departments" [ngValue]="cat.dep_id">{{cat.dep_name}}</option>
+
+                </select>
+                
+              </div>
+              <br>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="closeModalDialog()">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
